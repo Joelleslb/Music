@@ -1,0 +1,200 @@
+/* This is the stylesheet for the home page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cbe6f5;
+    color: white;
+    font-family: "Lato", serif; /* imported font-family from google fonts */
+    font-size: 120%;
+}
+
+header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: linear-gradient(to right, #6eaedf, #cbe6f5);
+}
+
+#note {
+    height: 30px;
+}
+
+#note:hover {
+    animation: bounce 0.5s ease-in-out infinite; /* infinite bouncing effect for the note on hover */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2e86c1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 94vh;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#introduction {
+    width: 50%;
+}
+
+#concert {
+    height: 70%;
+    width: 50%;
+    border-radius: 50%;
+    border: 5px solid #6eaedf;
+}
+
+#title {
+    margin: 50px;
+    line-height: 50px;
+    animation: fadeIn 1.5s ease-in-out; /* fade in effect for the title when opening the website */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* stairs effect for the title */
+.stacked {
+    display: block;
+}
+
+.stacked:nth-child(2) {
+    margin-left: 70px;
+}
+
+.stacked:nth-child(3) {
+    margin-left: 190px;
+}
+/* end of stairs effect */
+
+.blue {
+    color: #6eaedf;
+}
+
+#intro {
+    width: 70%;
+    margin-left: 50px;
+}
+
+#explore {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 0;
+}
+
+#pop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH_cmyBdR_czE0VLh--p97U10AMG5FI6FtHQ&s");
+}
+
+#rock {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.yellowbrick.co/wp-content/uploads/2023/07/music_blog_artist_musician_concert_show_stage.jpg");
+}
+
+.ticket {
+    height: 300px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* floating effect for the tickets on hover */
+}
+
+.ticket:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+#carousel {
+    padding: 5%;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Preloader */
+#preloader {
+    background: white url(preloader.gif) no-repeat center center;
+    background-size: 5%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+
+/* media querries to make the website responsive */
+@media screen and (max-width: 800px) {
+    #main {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    #concert {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #introduction {
+        width: 100%;
+    }
+    #intro {
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+    #title {
+        margin-left: 0px;
+        margin-left: auto;
+    }
+    #explore {
+        flex-direction: column;
+        align-items: center;
+    }
+}

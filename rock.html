@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This is for making the website responsive. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Importing bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Link to the css stylesheet -->
+        <link rel="stylesheet" href="genre.css">
+        <!-- Importing a font from google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Start of header -->
+        <header>
+            <img id="note" src="https://pngimg.com/d/music_notes_PNG37.png" alt="music note">
+            <!-- Start of nav bar -->
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="pop.html">POP</a>
+                <a href="rock.html">ROCK</a>
+            </nav>
+            <!-- End of nav bar -->
+        </header>
+        <!-- End of header -->
+        <!-- Start of the main section -->
+        <div id="main">
+            <div id="introduction">
+                <h1>ROCK</h1>
+                <p id="intro">Rock music is a dynamic and influential genre that emerged in the mid-20th century, blending elements of blues, country, and rhythm and blues. Known for its powerful guitar riffs, energetic drum beats, and emotive vocals, rock has given rise to numerous subgenres like punk, metal, and alternative. Artists like Elvis Presley, The Beatles, and Led Zeppelin have left an indelible mark on the genre, shaping its evolution and cultural impact. Beyond the music, rock has become a symbol of rebellion and self-expression, inspiring generations to push boundaries and redefine the status quo.</p>
+            </div>
+            <img id="intro-img" src="https://cdn.pixabay.com/photo/2015/04/03/20/59/concert-705914_1280.jpg" alt="rock">
+        </div>
+        <!-- End of the main section -->
+        <!-- Start of the accordions imported from bootstrap -->
+        <div id="accordions">
+            <!-- Start of the first accordion -->
+            <div>
+                <h2>KEY FEATURES</h2>
+                <div class="accordion" id="accordionFeatures">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFeatureOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#featureOne" aria-expanded="true" aria-controls="featureOne">
+                            Powerful Instrumentation
+                          </button>
+                      </h2>
+                      <div id="featureOne" class="accordion-collapse collapse show" aria-labelledby="headingFeatureOne" data-bs-parent="#accordionFeatures">
+                          <div class="accordion-body">
+                            Rock music often features electric guitars, bass guitars, and drums as its core instruments. The sound is amplified to create impactful riffs and solos, which are integral to the genre's energy and character.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFeatureTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featureTwo" aria-expanded="false" aria-controls="featureTwo">
+                            Emotive Vocals
+                          </button>
+                      </h2>
+                      <div id="featureTwo" class="accordion-collapse collapse" aria-labelledby="headingFeatureTwo" data-bs-parent="#accordionFeatures">
+                          <div class="accordion-body">
+                            Rock vocals range from raw and gritty to melodic and powerful, often conveying deep emotions. The lyrics can address themes like love, rebellion, social issues, and personal struggles, resonating with diverse audiences.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFeatureThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featureThree" aria-expanded="false" aria-controls="featureThree">
+                            Dynamic Subgenres
+                          </button>
+                      </h2>
+                      <div id="featureThree" class="accordion-collapse collapse" aria-labelledby="headingFeatureThree" data-bs-parent="#accordionFeatures">
+                          <div class="accordion-body">
+                            From classic rock to punk, metal, and alternative, the genre has evolved into countless subgenres. This diversity allows rock music to appeal to fans with varying tastes and preferences.
+                          </div>
+                      </div>
+                  </div>
+              </div>              
+         </div>
+         <!-- End of the first accordion -->
+         <!-- Start of the second accordion -->
+        <div id="fun-facts">
+            <h2>FUN FACTS</h2>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        The Birth of Rock 'n' Roll
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        The term "rock 'n' roll" was popularized in the 1950s by DJ Alan Freed. It was a euphemism for dancing and having fun, reflecting the genre's roots in lively, upbeat music.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        The Longest Rock Concert
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        The record for the longest rock concert is held by the band Chilly Gonzales, who played non-stop for over 27 hours in Paris in 2009.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Iconic Album Covers
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        The Beatles' "Abbey Road" album cover, featuring the band walking across a zebra crossing, is one of the most famous and imitated images in rock history. It even inspired fans to visit the crossing for photos, turning it into a cultural landmark.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- End of the second accordion -->
+        </div>
+        <!-- End of the accordions imported from bootstrap -->
+        <!-- Start of the artist section -->
+        <div id="artist">
+          <div>
+            <h2>FAMOUS ARTIST</h2>
+            <p>Linkin Park is a genre-defying band that rose to fame in the early 2000s, blending rock, rap, and electronic elements to create a unique and impactful sound. Known for their introspective lyrics and high-energy performances, the band gained widespread acclaim with their debut album, Hybrid Theory, which became one of the best-selling albums of the decade. Tracks like "In the End" and "Crawling" showcased their ability to connect deeply with audiences, exploring themes of struggle and resilience. Over the years, Linkin Park continued to evolve their style, earning a devoted fanbase and cementing their legacy as one of the most influential rock bands of their era.</p>
+          </div>
+          <img class="britney" src="https://www.billboard.com/wp-content/uploads/2023/04/01-Linkin-Park-cr-James-Minchin-billboard-1548.jpg?w=1292&h=861&crop=1" alt="Linkin Park">
+        </div>
+        <!-- End of the artist section -->
+        <!-- Start of the song section -->
+        <div id="song">
+          <img class="britney" src="https://media.zenfs.com/en/consequence_of_sound_458/5546696bab15199b0019dffa506e9d8c" alt="Linkin Park">
+          <div>
+            <h2>FAMOUS SONG</h2>
+            <p>"What I've Done" is one of Linkin Park's most iconic songs, released as the lead single from their 2007 album Minutes to Midnight. The song marks a stylistic shift for the band, embracing a more stripped-down and melodic sound while retaining their signature emotional intensity. Lyrically, it reflects themes of redemption, self-reflection, and accountability, resonating with listeners worldwide. The accompanying music video further emphasizes these ideas, interspersing powerful imagery of social, environmental, and political issues. "What I've Done" became a global hit, earning critical acclaim and being featured prominently in the soundtrack for the blockbuster film Transformers.</p>
+          </div>
+        </div>
+        <!-- End of the song section -->
+        <!-- Start of java script import from bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+        <!-- End of java script import from bootstrap -->
+    </body>
+</html>

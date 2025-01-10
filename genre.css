@@ -1,0 +1,174 @@
+/* This is the stylesheet for the genres' pages */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cbe6f5;
+    font-family: "Lato", serif; /* imported font-family from google fonts */
+    font-size: 120%;
+}
+
+header {
+    height: 40px;
+    background: linear-gradient(to right, #6eaedf, #cbe6f5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+#note {
+    height: 30px;
+}
+
+#note:hover {
+    animation: bounce 0.5s ease-in-out infinite; /* infinite bouncing effect for the note on hover */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2e86c1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#main {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 94vh;
+    align-items: center;
+}
+
+#introduction {
+    width: 50%;
+}
+
+#intro-img {
+    height: 70%;
+    width: 40%;
+    border-radius: 50%;
+    border: 5px solid #6eaedf;
+}
+
+#introduction h1 {
+    line-height: 50px;
+    margin-left: 50px;
+    color:#6eaedf; 
+}
+
+#intro {
+    margin-top: 50px;
+    color: white;
+}
+
+#accordions {
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+    background-color: #f2f8fc;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion {
+    width: 400px;
+    background: linear-gradient(to bottom, #ffffff, #eaf3fb);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#artist {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff, #e3f1fa);
+    border-top: 3px solid #6eaedf;
+}
+
+#artist h2, #song h2, #accordions h2 {
+    color: #2e86c1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#artist div, #song div {
+    padding: 10px;
+}
+
+.britney {
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#song {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+    background: linear-gradient(to right, #e3f1fa, #ffffff);
+    border-top: 3px solid #6eaedf;
+    border-bottom: 3px solid #6eaedf;
+}
+
+/* media querries to make the website responsive */
+@media screen and (max-width: 900px) {
+    #main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    #introduction {
+        width: 90%;
+    }
+    #intro-img {
+        width: 90%;
+        height: auto;
+    }
+    #accordions {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #fun-facts {
+        margin-top: 20px;
+    }
+    #artist {
+        flex-direction: column;
+    }
+    #song {
+        flex-direction: column-reverse;
+    }
+    .britney{
+        width: 70%;
+    }
+    #accordions {
+        justify-content: center;
+        align-items: center;
+    }
+    .accordion{
+        width: 90%;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This is for making the website responsive. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Importing bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Link to the css stylesheet -->
+        <link rel="stylesheet" href="genre.css">
+        <!-- Importing a font from google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Start of header -->
+        <header>
+            <img id="note" src="https://pngimg.com/d/music_notes_PNG37.png" alt="music note">
+            <!-- Start of nav bar -->
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="pop.html">POP</a>
+                <a href="rock.html">ROCK</a>
+            </nav>
+            <!-- End of nav bar -->
+        </header>
+        <!-- End of header -->
+        <!-- Start of the main section -->
+        <div id="main">
+            <div id="introduction">
+                <h1>POP</h1>
+                <p id="intro">Pop music, short for "popular music," is a genre that originated in the mid-20th century and is known for its mass appeal and catchy melodies. It often combines elements from various styles, such as rock, dance, and electronic music, making it versatile and dynamic.With its focus on memorable hooks, relatable lyrics, and radio-friendly structures, pop has become one of the most influential genres in modern music.</p>
+            </div>
+            <img id="intro-img" src="https://cdn.pixabay.com/photo/2016/11/19/11/11/dua-lipa-1838653_1280.jpg" alt="pop">
+        </div>
+        <!-- End of the main section -->
+        <!-- Start of the accordions imported from bootstrap -->
+        <div id="accordions">
+            <!-- Start of the first accordion -->
+            <div>
+                <h2>KEY FEATURES</h2>
+                <div class="accordion" id="accordionFeatures">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFeatureOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#featureOne" aria-expanded="true" aria-controls="featureOne">
+                              Catchy melodies
+                          </button>
+                      </h2>
+                      <div id="featureOne" class="accordion-collapse collapse show" aria-labelledby="headingFeatureOne" data-bs-parent="#accordionFeatures">
+                          <div class="accordion-body">
+                              Pop music is known for its memorable and catchy melodies. These tunes are easy to sing along with and often stick in your head long after you hear them.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFeatureTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featureTwo" aria-expanded="false" aria-controls="featureTwo">
+                              Broad Appeal
+                          </button>
+                      </h2>
+                      <div id="featureTwo" class="accordion-collapse collapse" aria-labelledby="headingFeatureTwo" data-bs-parent="#accordionFeatures">
+                          <div class="accordion-body">
+                              Pop music is designed to attract a wide audience. It blends elements from different genres like rock, R&B, and electronic music to create a versatile sound.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFeatureThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featureThree" aria-expanded="false" aria-controls="featureThree">
+                              Danceable Rhythms
+                          </button>
+                      </h2>
+                      <div id="featureThree" class="accordion-collapse collapse" aria-labelledby="headingFeatureThree" data-bs-parent="#accordionFeatures">
+                          <div class="accordion-body">
+                              Many pop songs feature upbeat tempos and danceable rhythms, making them perfect for parties, clubs, and live performances.
+                          </div>
+                      </div>
+                  </div>
+              </div>              
+         </div>
+         <!-- End of the first accordion -->
+         <!-- Start of the second accordion -->
+        <div id="fun-facts">
+            <h2>FUN FACTS</h2>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      The King of Pop
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      Michael Jackson is often referred to as the "King of Pop." His album Thriller remains the best-selling album of all time, with over 70 million copies sold worldwide.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Pop's Global Reach
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Pop music isn't just an American phenomenon—it's embraced globally. Artists like BTS from South Korea have brought K-pop into the international spotlight.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      The Grammy Connection
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      Pop artists dominate the Grammy Awards. For example, Taylor Swift has won multiple Album of the Year awards, becoming one of the most awarded pop artists in history.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- End of the second accordion -->
+        </div>
+        <!-- End of the accordions imported from bootstrap -->
+        <!-- Start of the artist section -->
+        <div id="artist">
+          <div>
+            <h2>FAMOUS ARTIST</h2>
+            <p>Britney Spears, often referred to as the "Princess of Pop," is one of the most iconic figures in modern music. Rising to fame in the late 1990s with her debut single, ...Baby One More Time, she revolutionized the pop landscape with her catchy songs, captivating performances, and charismatic presence. Known for hits like Toxic, Oops!... I Did It Again, and Circus, Britney has sold over 100 million records worldwide, making her one of the best-selling artists of all time. Beyond her music, she has also influenced fashion and pop culture, becoming a global sensation. Despite facing personal challenges, Britney's resilience and enduring legacy have cemented her place as a trailblazer in the music industry.</p>
+          </div>
+          <img class="britney" src="https://fashionista.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTcyMzg1OTE5MzY0NTA3NDUy/britney-spears-2000-grammy-awards-white-dress-copy.jpg" alt="Britney Spears">
+        </div>
+        <!-- End of the artist section -->
+        <!-- Start of the song section -->
+        <div id="song">
+          <img class="britney" src="https://fox17.com/resources/media2/16x9/full/1015/center/80/93b3f386-63e8-4f57-b007-6d9d4f8c1ab0-large16x9_GettyImages498220464.jpg" alt="Britney Spears">
+          <div>
+            <h2>FAMOUS SONG</h2>
+            <p>Britney Spears' most famous song is widely considered to be ...Baby One More Time. Released in 1998 as her debut single, it became an instant global sensation, topping the charts in multiple countries and selling over 10 million copies. Its iconic music video, featuring Britney in a schoolgirl outfit, became a cultural phenomenon and solidified her as a pop superstar. The song's infectious melody and memorable lyrics have made it a timeless classic in the pop music canon.</p>
+          </div>
+        </div>
+        <!-- End of the song section -->
+        <!-- Start of java script import from bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+        <!-- End of java script import from bootstrap -->
+    </body>
+</html>
