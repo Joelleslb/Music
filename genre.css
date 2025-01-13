@@ -135,7 +135,7 @@ a:hover {
 /* media querries to make the website responsive */
 @media screen and (max-width: 900px) {
     #main {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto;
